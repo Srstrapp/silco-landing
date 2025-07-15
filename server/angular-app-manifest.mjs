@@ -8,21 +8,21 @@ export default {
   {
     "renderMode": 2,
     "preload": [
-      "/silco-landingchunk-MM35JLYZ.js"
+      "/silco-landing/chunk-MM35JLYZ.js"
     ],
     "route": "/silco-landing"
   },
   {
     "renderMode": 2,
     "preload": [
-      "/silco-landingchunk-TC2BRKS5.js"
+      "/silco-landing/chunk-TC2BRKS5.js"
     ],
     "route": "/silco-landing/creative"
   },
   {
     "renderMode": 2,
     "preload": [
-      "/silco-landingchunk-YC6DHTBB.js"
+      "/silco-landing/chunk-YC6DHTBB.js"
     ],
     "route": "/silco-landing/barberia"
   },
@@ -34,11 +34,11 @@ export default {
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 577, hash: '17d0b8caeaf308956e3e3957b5ac1c49e5ba4e1fa02f68f414f73fc801b0ff30', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 1090, hash: '94e1119509a6bdbee1c4e5df1ab21b84f29cbdcc420a01bfce68f1fbd9184da8', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'index.html': {size: 11888, hash: 'b119a71ae785a02e98162d9f4a9ecc710f401b512d937a306d2f9fa659b8e956', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'barberia/index.html': {size: 1076, hash: '48db0ed92ed9871702b5cc75edd63b724564271e07c12b8b7f70d76d22469e77', text: () => import('./assets-chunks/barberia_index_html.mjs').then(m => m.default)},
-    'creative/index.html': {size: 1076, hash: '310e0cb7fb2810504bc84cd183e668b1bddc633561248463ac26d8818d357a69', text: () => import('./assets-chunks/creative_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 8837, hash: '00087f7073cc141bd189f8d670c4e0a0967801b2cdd7caf250a5604b6065407b', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1094, hash: 'd4cec46613f2a16c38597224ce04c427ac4a73e28377e8fd8a2c22e316dcfca4', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'creative/index.html': {size: 9362, hash: '59d33c4c05ff50f91e39117eaefdef4815ef918f7a6f18596ec4a3154a63da20', text: () => import('./assets-chunks/creative_index_html.mjs').then(m => m.default)},
+    'index.html': {size: 27928, hash: 'fd4aed9f2cd7c9fae4a9f94209b33b0294317a1543530c4bcfb54d271915c62c', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'barberia/index.html': {size: 9362, hash: '3bede7512c819170986e000ea967ee8d2d6ea40965d31f05ac9f9ba802e2c1f5', text: () => import('./assets-chunks/barberia_index_html.mjs').then(m => m.default)},
     'styles-FVY45DYJ.css': {size: 28597, hash: 'vuXGzoO80qo', text: () => import('./assets-chunks/styles-FVY45DYJ_css.mjs').then(m => m.default)}
   },
 };
