@@ -1,0 +1,49 @@
+<!-- Hero Section -->
+<section class="hero-section relative h-screen flex items-center justify-center bg-gray-900 overflow-hidden">
+    <div class="absolute inset-0 bg-black/50 z-0"></div>
+
+    <div class="hero-content text-center relative z-10 px-4">
+        <h1 class="text-5xl md:text-7xl text-white mb-6">
+            Silco Group
+        </h1>
+        <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
+            Innovación y estilo en un solo lugar
+        </p>
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+            <button pButton label="Silco Creative" class="p-button-primary"></button>
+            <button pButton label="Silco Barbería" class="p-button-secondary"></button>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Servicios -->
+<section class="py-20 bg-primary-dark">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl text-center text-accent mb-12 font-bebas" data-animate>
+            Nuestros Servicios
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="service-card" data-animate data-direction="left">
+                <p-card header="Diseño de Marca" class="h-full">
+                    <ng-template pTemplate="header">
+                        <img alt="Card" src="assets/images/design-icon.svg" class="w-16 mx-auto">
+                    </ng-template>
+                    <p>Creación de identidad visual profesional</p>
+                </p-card>
+            </div>
+
+            <!-- Más cards de servicios -->
+        </div>
+    </div>
+</section>
+
+<!-- Sección CTA -->
+<section class="py-16 bg-accent text-primary text-center" data-animate>
+    <div class="container mx-auto px-4">
+        <h3 class="text-2xl md:text-3xl font-bebas mb-6">¿Listo para transformar tu proyecto?</h3>
+        <button pButton label="Contactar por WhatsApp" icon="pi pi-whatsapp"
+            class="p-button-lg bg-primary text-white border-primary" (click)="contactWhatsApp()">
+        </button>
+    </div>
+</section>

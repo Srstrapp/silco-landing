@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+/* ===== Tailwind ===== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Fuentes ===== */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* ===== Variables ===== */
+:root {
+    --primary: #2C3E50;
+    --creative: #E67E22;
+    --barberia: #1A1A1A;
+    --accent: #F1C40F;
+}
+
+/* ===== Reset y Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*html {
+    scroll-behavior: smooth;
+}*/
+
+body {
+    @apply bg-primary text-gray-100 font-montserrat;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* ===== Tipografía ===== */
+h1,
+h2,
+h3,
+h4 {
+    @apply font-bebas tracking-wide;
+}
+
+/* ===== PrimeNG Overrides ===== */
+.p-button {
+    @apply transition-all duration-200;
+
+    &-primary {
+        @apply bg-accent hover:bg-accent/90 border-accent;
+    }
+}
+
+/* ===== Animaciones GSAP ===== */
+[data-animate] {
+    @apply opacity-0;
+}
+
+/* ===== Utilidades Personalizadas ===== */
+.silco-bg-creative {
+    background: linear-gradient(to right, var(--creative), #e67e22d0);
+}
+
+.silco-bg-barberia {
+    background: linear-gradient(to right, var(--barberia), #1a1a1ad0);
+}

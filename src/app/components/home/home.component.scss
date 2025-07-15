@@ -1,0 +1,27 @@
+:host {
+    display: block;
+    overflow-x: hidden;
+}
+
+
+.hero-section {
+    background: url('assets/images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.service-card {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
+// Animaciones específicas
+[data-delay="0.2"] {
+    animation-delay: 0.2s;
+}
+
+[data-delay="0.4"] {
+    animation-delay: 0.4s;
+}
