@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { TextPlugin } from 'gsap/TextPlugin';
 
 @Component({
   selector: 'app-root',
@@ -10,3 +13,4 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'silco-landing';
 }
+gsap.registerPlugin(ScrollTrigger, TextPlugin);

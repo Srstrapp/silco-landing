@@ -12,6 +12,7 @@
     --creative: #E67E22;
     --barberia: #1A1A1A;
     --accent: #F1C40F;
+    --scrollbar-width: 0px;
 }
 
 /* ===== Reset y Base ===== */
@@ -21,16 +22,15 @@
     box-sizing: border-box;
 }
 
-/*html {
-    scroll-behavior: smooth;
-}*/
+html {
+    overflow-x: hidden;
+    width: calc(100vw - var(--scrollbar-width));
+}
 
 body {
     @apply bg-primary text-gray-100 font-montserrat;
-}
-
-html,
-body {
+    position: relative;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -49,18 +49,4 @@ h4 {
     &-primary {
         @apply bg-accent hover:bg-accent/90 border-accent;
     }
-}
-
-/* ===== Animaciones GSAP ===== */
-[data-animate] {
-    @apply opacity-0;
-}
-
-/* ===== Utilidades Personalizadas ===== */
-.silco-bg-creative {
-    background: linear-gradient(to right, var(--creative), #e67e22d0);
-}
-
-.silco-bg-barberia {
-    background: linear-gradient(to right, var(--barberia), #1a1a1ad0);
 }

@@ -7,6 +7,16 @@ export default <Config>{
   ],
   theme: {
     extend: {
+      animation: {
+        'float': 'float 6s ease-in-out infinite',
+        'pulse-slow': 'pulse 6s ease-in-out infinite'
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-15px)' }
+        }
+      },
       colors: {
         primary: '#2C3E50',
         creative: '#E67E22',
