@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SilcoLanding
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.
@@ -57,3 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# silco-landing
+Landing page Comunitty manager and Barber Shop
+>>>>>>> d7bfe3e7499f8906f756b6e4962aa8668caf6672
