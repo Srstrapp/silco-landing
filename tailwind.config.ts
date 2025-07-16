@@ -2,8 +2,8 @@ import type { Config } from 'tailwindcss';
 
 export default <Config>{
   content: [
-    "./src/**/*.{html,ts}",
-    "./node_modules/primeng/**/*.{html,ts}"
+    "./src/**/*.{html,ts,scss}",
+    "./node_modules/primeng/**/*.{html,ts,scss}"
   ],
   theme: {
     extend: {

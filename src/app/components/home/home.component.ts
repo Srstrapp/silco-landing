@@ -68,6 +68,6 @@ export class HomeComponent implements AfterViewInit {
   }
 
   contactWhatsApp() {
-    this.whatsappService.sendMessage('Me interesan sus servicios');
+    this.whatsappService.sendMessage();
   }
 }
