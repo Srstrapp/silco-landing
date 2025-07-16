@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:silco-landing": "node dist/silco-landing/server/server.mjs"
+    "serve:ssr:silco-landing": "node dist/silco-landing/server/server.mjs",
+    "predeploy": "ng build --configuration production --base-href /silco-landing/",
+    "deploy": "gh-pages -d dist/silco-landing"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +25,7 @@
     "@angular/ssr": "^19.2.15",
     "bun": "^1.2.18",
     "express": "^4.18.2",
+    "gh-pages": "^6.3.0",
     "gsap": "3.12.2",
     "lottie-web": "^5.13.0",
     "primeicons": "^6.0.1",
@@ -31,7 +34,7 @@
     "swiper": "^11.2.10",
     "tslib": "^2.3.0",
     "tsparticles-slim": "2.12.0",
-    "zone.js": "~0.15.0"
+    "zone.js": "^0.15.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "19.2.6",
@@ -40,7 +43,8 @@
     "@types/bun": "latest",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
-    "@types/node": "^18.18.0",
+    "@types/node": "^24.0.14",
+    "angular-cli-ghpages": "2.0.3",
     "autoprefixer": "^10.4.17",
     "jasmine-core": "~5.6.0",
     "karma": "~6.4.0",
