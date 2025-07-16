@@ -20,8 +20,22 @@ $glass-border: rgba(255, 255, 255, 0.1);
 /* ===== Hero Section ===== */
 .hero-section {
     h1 {
+        font-size: 3.5rem;
+
+        /* Tamaño base aumentado (~75% más grande) */
+        @media (min-width: 768px) {
+            font-size: 4.5rem;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 5.5rem;
+        }
+
+        /* Mantenemos todos tus efectos existentes */
         transition: all 0.3s ease;
         text-underline-offset: 8px;
+        line-height: 1.1;
+        /* Ajustado para el nuevo tamaño */
 
         &:hover {
             transform: scale(1.02);
@@ -33,9 +47,12 @@ $glass-border: rgba(255, 255, 255, 0.1);
             -webkit-background-clip: text;
             text-fill-color: transparent;
             background-image: linear-gradient(to right, $primary-color, white);
+            /* Añadido para mejor visualización con el nuevo tamaño */
+            padding: 0 0.1em;
         }
     }
 
+    /* El resto del código se mantiene igual */
     p {
         overflow: hidden;
         border-right: 2px solid $primary-color;
